@@ -80,10 +80,11 @@ i{
     align-items: center;
     justify-content: center;
 }
+
 .news-img {
     height: 100%;
     width: 100%;
-    border-radius: 10px;
+   
 }
 
 .box {
@@ -94,7 +95,7 @@ i{
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease; 
-
+    cursor: pointer;
     /* Hover effect */
     &:hover {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); 
