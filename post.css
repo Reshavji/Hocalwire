@@ -199,8 +199,4 @@ main {
   
   }
   
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .grid-sys {
-      grid-template-columns: 30% 60% 10%;
-    }
   }
