@@ -10,5 +10,14 @@ window.addEventListener('scroll', () => {
   mainContent.scrollTop = scrollPosition;
 });
 
-// Update the main content's height to match the window height
-mainContent.style.height = `${windowHeight}px`;
+// Get a reference to the button and the left sidebar
+const sidebarToggle = document.getElementById('sidebar-toggle');
+const leftSidebar = document.querySelector('.left-sidebar');
+
+// Add an event listener to the button
+sidebarToggle.addEventListener('click', toggleSidebar);
+
+// Function to toggle the sidebar
+function toggleSidebar() {
+  leftSidebar.classList.toggle('show-sidebar');
+}

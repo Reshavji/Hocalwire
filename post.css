@@ -11,9 +11,10 @@
     border: 1px soild rgb(6, 5, 5);
     min-height: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    padding: 20px 5px;
+    padding: 10px 5px;
     position:sticky;
   }
+  
 main {
     background-color: #fff;
     height: auto; 
@@ -22,7 +23,7 @@ main {
   main::-webkit-scrollbar{
     display: none;
   }
-  .sidebar-left {
+  .left-sidebar {
     background-color: whitesmoke;
     border: 1px solid rgb(6, 5, 5);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
@@ -31,9 +32,16 @@ main {
     top: 0;
     left: 0;
     height: 100vh;
-    overflow-y: auto; 
+   
+  }
+
+.show-sidebar {
+    display: block !important; /* Show the sidebar */
+    transform: translateX(0) !important; /* Slide it in from the left */
   }
   
+
+   
   .sidebar-right {
     background-color: whitesmoke;
     border: 1px solid rgb(6, 5, 5);
@@ -166,4 +174,33 @@ main {
     padding: 7px 10px;
     border-radius: 5px;
     color: white;
+  }
+
+  @media (max-width: 768px) {
+    .grid-sys {
+      grid-template-columns: 100%;
+    }
+    .left-sidebar {
+        display: none;
+        transform: translateX(-100%); /* Hide the sidebar on smaller devices */
+        transition: transform 0.3s ease;
+      }
+    
+      main {
+        grid-column: span 3;
+      }
+    
+      .right-sidebar {
+        order: 3;
+      }
+      .container{
+        overflow-y: auto;
+      }
+  
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .grid-sys {
+      grid-template-columns: 30% 60% 10%;
+    }
   }
