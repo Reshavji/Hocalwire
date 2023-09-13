@@ -176,7 +176,7 @@ main {
     color: white;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width:1200px) {
     .grid-sys {
       grid-template-columns: 100%;
     }
