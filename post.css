@@ -58,7 +58,9 @@ main {
     flex-direction: column;
     gap: 20px;
  }
-
+.post-heading{
+    font-size: 2rem;
+}
 .post-img{
     height: 400px;
     width: 80%;
