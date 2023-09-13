@@ -56,8 +56,8 @@ a{
 .details {
     position: absolute;
     color: white;
-    width: 50%;
-    margin-top: 300px;
+    width: 100%;
+    bottom: 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -66,7 +66,17 @@ a{
     padding: 20px 30px;
     cursor: pointer;
 }
-
+.image-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgb(236, 228, 228);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
 i {
     cursor: pointer;
 }
@@ -166,7 +176,7 @@ h2 {
     }
     .details{
         width: 100%;
-        margin-top: 50px;
+      bottom: 10px;
     }
 
     .title {
