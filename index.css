@@ -51,6 +51,7 @@ a{
     margin-top: 20px;
     grid-template-columns: repeat(2, 1fr);
     height: 50vh;
+    padding: 20px;
 }
 
 .details {
@@ -178,7 +179,13 @@ h2 {
         width: 100%;
       bottom: 10px;
     }
-
+  .box{
+    width: 100%;
+    height: auto;
+  }
+  a{
+    width: 100%;
+  }
     .title {
         font-size: 1.2rem;
     }
